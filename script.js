@@ -15,9 +15,20 @@ row.forEach(function(element){
 
 const item = document.querySelectorAll('.item')
 item.forEach(function(element){
-    element.addEventListener('mouseover', (element)=>{
-      element.target.classList.add('background')
+    element.addEventListener('mousemove', (element)=>{
+        element.target.classList.add('background')
     })
 })
 
+const effacer = document.querySelectorAll('button')
+for(const el of effacer){
+    el.addEventListener('click', (element)=>{
+        if(element.target.textContent==='Clear/Reset'){
+            const couleur = document.querySelectorAll('.background')
+            for(const el of couleur){
+                el.classList.toggle('background')
+            }
+        }
+    })
+}
 

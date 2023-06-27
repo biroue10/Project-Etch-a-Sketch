@@ -6,22 +6,26 @@
 }
 .row{
     display: flex;
-    height: 40px;
+    height: 29px;
     width: 100%;
-    border: 0.5px solid;
+    border: 0.5px solid white;
 }
 .item{
     display: flex;
-    height: 40px;
+    height: 29px;
     width: 100%;
-    border: 0.5px solid;
+    border: 0.5px solid white;
 }
 .background{
     background-color: red;
 }
 .container{
-    width: 50%;
+    width: 40%;
     margin: auto;
+    background-color:white;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 5px 5px #888888;
 }
 h1{
     margin: auto;
@@ -55,4 +59,28 @@ footer{
   justify-content: center;
   color: aliceblue;
   font-style: italic;
+}
+body{
+    background-color: #ededed;
+}
+.bouton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bouton button{
+    width: 90px;
+    margin: 30px;
+    border: none;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color: white;
+    box-shadow: 5px 5px 5px #888888;
+    cursor: pointer;
+}
+.bouton button:hover{
+    transform: scale(1.1);
+    background: #FFF;
+    color: #000;
 }
